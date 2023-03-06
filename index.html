@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Coffee Shop</title>
+    <link rel="stylesheet" href="cofffe.css">
+    
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="coffeecafe.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+            </nav>
+        <div class="header-text">
+            <p>Welcome to Dorpan Coffee Shop</p>
+            <h1>Fresh Coffee in the Market<span><br>With lots of Varaites</span><br>And With All Your hearts <br></h1>
+        </div>
+    </div>
+</div>
+<!---------about---------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+               <img src="cafe.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Us</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ipsam vel esse voluptatem, atque qui quos, pariatur minus ipsa fuga minima architecto, voluptate porro accusantium officiis repellendus consectetur eaque dolore!</p>
+             <div class="about-col-3">
+                <h2>What Makes Our Coffee Different</h2>
+                <p>We include Varaites of Coffee seed with new design and lots of best quality product which makes you feel good to all. Anything you want please visit us</p>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------Services-------- -->
+<div id="Services">
+    <div class="container">
+        <h1 class="sub-title">Our Special</h1>
+        <div class="Coffee">
+            <div class="Coffee">
+                <img src="milk.jpg">
+                <p>With Milk Coffee Enjoy Day</p>
+                    <h3>Price: Rs 150/-</h3>
+              </div>
+            <div class="Coffee">
+                <img src="black.jpg">
+                <p>Fresh Black Coffee With Your Choice </p>
+                    <h3>Price: Rs 100/-</h3>
+            </div>
+            <div class="Coffee">
+                <img src="green.jpg">
+                <p>Enjoying Drink With Green Coffee</p>
+                    <h3>Price: Rs 200/-</h3> 
+             
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -----------Contact-------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Us</h1>    
+                <p><i class="fa-solid fa-envelope"></i> dorpancoffee35@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 9805807934</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/abishek-bahadur-thapa-02588b259/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://wordpress.com/posts/abishekbahadurthapa.wordpress.com"><i class="fa-brands fa-wordpress"></i></a>
+                </div>
+                <h2>We are hiring new Workers<br>Please Contact us if you are interested</h2>
+            </div>
+            <div class="contact-right"> 
+               <form>
+                   <input type="text" name="Name" placeholder="Your Name" required>
+                   <input type="email" name="email" placeholder="Your Email" required>
+                   <textarea name="Message" rows="6" placeholder="Your Meassage"></textarea>
+                   <button type="submit"class="btn btn2">Submit</button>
+               </form> 
+               </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://kit.fontawesome.com/5fc2230bea.js" crossorigin="anonymous"></script>
+    <script>
+   
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        
+        }
+    
+    </script>
+    
+<script>
+
+
+    var sidemenu = document .getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function openmenu(){
+        sidemenu.style.right = "-200";
+    }
+</script>
+    <div class="copyright">
+        <p>Copyright @ Dorpan Coffee Shop. Made with <i class="fa-solid fa-heart"></i> by Coffee Shop Website</p>
+    </div>
+</div>
+</body>
+</html>
