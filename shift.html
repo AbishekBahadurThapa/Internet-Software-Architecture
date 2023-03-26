@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>js</title>
+</head>
+<body>
+    <script language="Javascript" type="text/JavaScript">
+        function shiftpower(number,power){
+            let a=1;
+            for(let i=power;i>0;i--){
+                a*=2;
+            }
+            result=number*(a);
+            return result;
+        }
+        number=parseInt(prompt("Enter a number: "));
+        while(true){
+            power=parseInt(prompt("Enter the value to raise a : "));
+            if(power<=0){
+                alert("Enter value again(Positive value)");
+                continue;
+            }
+            else{
+                break;
+            }
+        }
+        result=shiftpower(number,power);
+        console.log(number+"*2^"+power);
+        console.log("Result is:",result);
+</script>
+</body>
+</html>
+
+

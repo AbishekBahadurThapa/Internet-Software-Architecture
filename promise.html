@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>js</title>
+</head>
+<body>
+    <h1>JavaScript functions</h1>
+    <h2>Callback functions</h2>
+    <p id="demo"></p>
+    <script>
+        let countValue=new Promise(function(resolve, reject){
+            resolve("Promise resolved");
+        });
+
+        // executes when promise is resolved successfully
+        countValue
+        .then(function successValue(result){
+            console.log(result);
+        })
+        .then(function successValue1(){
+            console.log("You can call multiple functons this way.");
+        });
+</script>
+</body>
+</html>
+
+

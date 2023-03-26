@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>js</title>
+</head>
+<body>
+    <script language="Javascript" type="text/JavaScript">
+     function PrimeNumberInRange(n1, n2) {
+        for (let i = n1; i <= n2; i++) {
+            if (i < 2) {
+                continue;
+            }
+            let isPrime = true;
+            for (let j = 2; j <= Math.sqrt(i); j++) {
+                if (i % j === 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+            if (isPrime) {
+                return true;
+            }
+        }
+        return false;
+    }
+    console.log(PrimeNumberInRange(10, 20)); 
+    console.log(PrimeNumberInRange(62, 66)); 
+</script>
+</body>
+</html>
+
+
+
+

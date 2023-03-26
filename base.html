@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>js</title>
+</head>
+<body>
+    <script language="Javascript" type="text/JavaScript">
+       function binary(decimal){
+        let binary=0;
+        var result="";
+        while(decimal!=0){
+            binary=decimal%2;
+            decimal=parseInt(decimal/2);
+            result=String(binary)+result;
+        }
+        return result;
+       }
+       while(true){
+        decimal=parseInt(prompt("Enter the decimal number from(1-1024):"));
+        if(decimal>1024 || decimal<0){
+            alert("Enter value again(from 1 - 1024): ");
+            continue;
+        }
+        else{
+            break;
+        }
+       }
+       binary=binary(decimal);
+       console.log("The Binary number equal of "+decimal+" is:"+binary);
+</script>
+</body>
+</html>
+
+

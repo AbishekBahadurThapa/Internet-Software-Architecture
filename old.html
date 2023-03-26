@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>js</title>
+</head>
+<body>
+        <script language="Javascript" type="text/JavaScript">
+       function oddishOrEvenish(num) {
+        let sum = 0;
+        let digits = num.toString().split("");
+        for (let i = 0; i < digits.length; i++) {
+            sum += parseInt(digits[i]);
+         }
+         return sum % 2 === 0 ? "Evenish" : "Oddish";
+        }
+        console.log(oddishOrEvenish(57)); 
+        console.log(oddishOrEvenish(542)); 
+        console.log(oddishOrEvenish(1123)); 
+</script>
+</body>
+</html>
+
+
+
+
